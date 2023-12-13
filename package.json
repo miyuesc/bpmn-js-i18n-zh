@@ -1,0 +1,31 @@
+{
+  "name": "bpmn-js-i18n-zh",
+  "version": "1.0.0",
+  "description": "Community contributed bpmn-js zh-cn translations.",
+  "type": "module",
+  "main": "index.js",
+  "keywords": [
+    "bpmn",
+    "bpmn-js",
+    "bpmn-js-i18n",
+    "bpmn-js-i18n-zh",
+    "bpmn-js-i18n-zh-cn",
+    "i18n"
+  ],
+  "files": ["lib"],
+  "author": {
+    "email": "913784771@qq.com",
+    "name": "MiyueFE",
+    "url": "https://github.com/miyusc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miyuesc/bpmn-js-i18n-zh.git"
+  },
+  "engines": {
+    "node": ">= 16"
+  }
+}
