@@ -1,6 +1,6 @@
 {
   "name": "bpmn-js-i18n-zh",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Community contributed bpmn-js zh-cn translations.",
   "type": "module",
   "main": "index.js",
