@@ -1,11 +1,59 @@
 # bpmn-js-i18n-zh
  Chinese internationalization resources for bpmn-js
 
-## Usage 
+## Install 
 
 ```
 npm install bpmn-js-i18n-zh
 ```
+
+## Usage
+
+### Only with bpmn-js
+
+```javascript
+// custom translation module
+import bpmn from 'bpmn-js-i18n-zh/lib/bpmn-js'
+
+const zhCN = {
+  ...bpmn,
+  // 可以在这里加上需要修改的部分内容
+}
+
+export function customTranslate(template, replacements) {
+  replacements = replacements || {}
+
+  // Translate
+  template = zhCN[template] || template
+
+  // Replace
+  return template.replace(/{([^}]+)}/g, function (_, key) {
+    return replacements[key] || '{' + key + '}'
+  })
+}
+
+export default {
+  translate: ['value', customTranslate]
+}
+
+```
+
+```javascript
+import Modeler from 'bpmn-js/lib/Modeler'
+
+import Translate from '../utils/Translate'
+
+const modeler = new Modeler({
+  container: '#modeler-content',
+  additionalModules: [
+    Translate
+  ],
+})
+
+modeler.createNewDiagram()
+```
+
+### Use bpmn-js and bpmn-js-properties-panel
 
 ```javascript
 // custom translation module

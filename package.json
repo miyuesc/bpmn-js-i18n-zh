@@ -12,6 +12,7 @@
     "bpmn-js-i18n-zh-cn",
     "i18n"
   ],
+  "license": "MIT",
   "files": ["lib"],
   "author": {
     "email": "913784771@qq.com",
